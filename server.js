@@ -23,5 +23,4 @@ server.addService(usersProto.UserService.service, {
 
 server.bindAsync(`127.0.0.1:${PORT}`, grpc.ServerCredentials.createInsecure(), () => {
   console.log(`gRPC server running on port ${PORT}`);
-  server.start();
 });
